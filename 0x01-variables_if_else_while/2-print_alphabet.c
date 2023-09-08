@@ -2,7 +2,7 @@
 
 /**
  * main - the entry point to my program
- * return: always return 0 (success)
+ * Return: Always 0 (Success)
  * a is a char
  */
 
