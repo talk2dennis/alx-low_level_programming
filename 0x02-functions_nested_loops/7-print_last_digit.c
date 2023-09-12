@@ -13,15 +13,7 @@ int print_last_digit(int n)
 	int j;
 	
 	printf("%i\n", n);
-	j = n;
-	if (n == -2147483648)
-	{
-		j = (unsigned int) (n);
-	}
-	else if (n < 0)
-	{
-		j =  -n;
-	}
+	j = (unsigned int) (n);
 	i = j % 10;
 	_putchar('0' + i);
 	return (i);
