@@ -12,11 +12,10 @@ int print_last_digit(int n)
 	int i;
 	int j;
 
-	printf("%i\n", n);
 	j = n;
 	if (n < 0)
 	{
-		j = -(n);
+		j = (long) -(n);
 	}
 	i = j % 10;
 	_putchar('0' + i);
