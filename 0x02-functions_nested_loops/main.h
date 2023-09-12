@@ -11,3 +11,10 @@ int _putchar(char c);
 void print_alphabet(void);
 
 #endif
+
+#ifndef ALPHABET10_H
+#define ALPHABETH10_H
+
+void print_alphabet_x10(void);
+
+#endif
