@@ -27,3 +27,10 @@ int _isalpha(int c);
 
 #endif
 
+#ifndef PRINTSIGN_H
+#define PRINTSIGN_H
+
+int print_sign(int n);
+
+#endif
+
