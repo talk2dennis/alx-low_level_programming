@@ -48,4 +48,11 @@ int print_last_digit(int n);
 
 #endif
 
+#ifndef _JACKBAUER_H
+#define _JACKBAUER_H
+
+void jack_bauer(void);
+
+#endif
+
 
