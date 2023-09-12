@@ -1,16 +1,9 @@
 #include "main.h"
 
 /**
- * main - the entrance point to our program that prints a string
- * Return: Always 0 on success
+ * print_alphabet - is a function that prints all lowercase alphabets
+ * Return: return void
  */
-void print_alphabet(void);
-
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}
 
 void print_alphabet(void)
 {
