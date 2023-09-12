@@ -15,11 +15,11 @@ int print_last_digit(int n)
 	j = n;
 	if (n == -2147483648)
 	{
-		j = (long) -(n);
+		j = (unsigned int) (n);
 	}
 	else if (n < 0)
 	{
-		j =  -(n);
+		j =  -n;
 	}
 	i = j % 10;
 	_putchar('0' + i);
