@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _abs(int n) - a function that returns the abs  of a number
+ * _abs - a function that returns the abs  of a number
  * @n: is an int argurement
  * Return: returns and int
  */
