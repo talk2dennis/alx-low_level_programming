@@ -8,13 +8,14 @@ int _putchar(char c);
 #ifndef ALPHABET_H
 #define ALPHABET_H
 
+void print_alphabet_x10(void);  
 void print_alphabet(void);
 
 #endif
 
-#ifndef ALPHABET10_H
-#define ALPHABETH10_H
+#ifndef _ISLOWER_H
+#define _ISLOWER_H
 
-void print_alphabet_x10(void);
+int _islower(int c);
 
 #endif
