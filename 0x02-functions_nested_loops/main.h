@@ -37,7 +37,7 @@ int print_sign(int n);
 #ifndef _ABS_H
 #define _ABS_H
 
-int _abs(int);
+int _abs(int n);
 
 #endif
 
