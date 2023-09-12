@@ -23,6 +23,6 @@ int print_last_digit(int n)
 	else
 	{
 		putchar('0' + (n % 10));
-		return (n)
+		return (n);
 	}
 }
