@@ -8,13 +8,16 @@
  */
 
 int print_last_digit(int n)
-{
-	int i;
-	int j;
-	
-	printf("%i\n", n);
-	j = (long) -n;
-	i = j % 10;
-	_putchar('0' + i);
+{	
+
+	if (n == -2147483648)
+	{
+		_putchar('0' + (unsigned int) n % 10);
+		return (unsigned int) n;
+	}
+	else if (n < 0)
+	{
+		putchar('0' + (-(n) % 10));
+	}
 	return (i);
 }
