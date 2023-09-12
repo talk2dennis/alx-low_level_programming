@@ -1,5 +1,9 @@
-
-
+/**
+ * jack_bauer - a function that prints that prints
+ * every minute from 00:00 to 23:59
+ *
+ * Return: Always returns void
+ */
 
 void times_table(void)
 {
