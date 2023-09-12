@@ -13,9 +13,13 @@ int print_last_digit(int n)
 	int j;
 
 	j = n;
-	if (n < 0)
+	if (n == -2147483648)
 	{
 		j = (long) -(n);
+	}
+	else if (n < 0)
+	{
+		j =  -(n);
 	}
 	i = j % 10;
 	_putchar('0' + i);
