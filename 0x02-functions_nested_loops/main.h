@@ -55,4 +55,10 @@ void jack_bauer(void);
 
 #endif
 
+#ifndef TIMESTABLE_H
+#define TIMESTABLE_H
+
+void times_table(void);
+
+#endif
 
