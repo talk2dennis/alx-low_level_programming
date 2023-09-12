@@ -13,7 +13,7 @@ int print_last_digit(int n)
 	int j;
 	
 	printf("%i\n", n);
-	j = (unsigned int) (n);
+	j = (long) -n;
 	i = j % 10;
 	_putchar('0' + i);
 	return (i);
