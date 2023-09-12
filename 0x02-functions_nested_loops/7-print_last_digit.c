@@ -11,7 +11,8 @@ int print_last_digit(int n)
 {
 	int i;
 	int j;
-
+	
+	printf("%i\n");
 	j = n;
 	if (n == -2147483648)
 	{
