@@ -21,16 +21,17 @@ void print_times_table(int n)
 			{
 				result = i * j;
 				next = i * (j + 1);
-				if (result >= 10)
-				{
-					_putchar('0' + (result / 10));
-					_putchar('0' + (result % 10));
-				}
-				else if (result > 99)
+				if (result > 99)
 				{
 					_putchar('0' + result / 100);
 					_putchar('0' + (result % 100) / 10);
 					_putchar('0' + (result % 100) % 10);
+				}
+				else if (result > 9)
+				{
+					_putchar('0' + (result / 10));
+					_putchar('0' + (result % 10));
+
 				}
 				else
 					_putchar('0' + result);
