@@ -41,6 +41,8 @@ void print_times_table(int n)
 					_putchar(',');
 					if (next < 10)
 						print_space(3);
+					else if (next > 99)
+						print_space(1);
 					else
 						print_space(2);
 				}
