@@ -20,7 +20,7 @@ void print_to_98(int n)
 				_putchar('0' + i % 10);
 				_putchar('\n');
 			}
-			else if (i > 9)
+			else if (i > 9 || i < 9)
 			{
 				_putchar('0' + i / 10);
 				_putchar('0' + i % 10);
