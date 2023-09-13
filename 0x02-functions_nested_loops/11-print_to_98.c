@@ -34,6 +34,8 @@ void print_to_98(int n)
 		{
 			if (i == 98)
 			{
+				_putchar('0' + i / 10);
+				_putchar('0' + i % 10);
 				_putchar('\n');
 			}
 			else if (i < 100)
