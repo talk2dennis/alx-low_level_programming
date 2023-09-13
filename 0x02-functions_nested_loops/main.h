@@ -59,6 +59,7 @@ void jack_bauer(void);
 #define TIMESTABLE_H
 
 void times_table(void);
+void print_times_table(int n);
 
 #endif
 
@@ -74,4 +75,5 @@ int add(int, int);
 #define PRINTTO98_H
 void print_to_98(int n);
 #endif
+
 
