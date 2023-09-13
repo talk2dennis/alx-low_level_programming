@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * int add - a function that prints the sum of two numbers
+ * add - a function that prints the sum of two numbers
  * @a: The first int argurement
  * @b: The second int argurement
  *
