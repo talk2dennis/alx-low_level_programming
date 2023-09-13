@@ -38,7 +38,7 @@ void print_to_98(int n)
 			}
 		        else if (i < -9)
 			{
-				putchar('-');
+				-putchar('-');
 				_putchar('0' + -i / 10);
 				_putchar('0' + -i % 10);
 				_putchar(',');
