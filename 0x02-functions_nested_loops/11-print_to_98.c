@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * times_table - a function that prints times table
- *
+ * print_to_98 - a function that prints from any number to 98
+ * @n: int argurement
  * Return: Always returns void
  */
 
 void print_to_98(int n)
 {
-	int i, j, result, next;
+	int i;
 
 	if (n < 98)
 	{
@@ -16,9 +16,9 @@ void print_to_98(int n)
 		{
 			if (i > 9)
 			{
-				putchar('0' + i / 10);
-				putchar('0' + i % 10);
-				putchar('0' + i % 10);
+				_putchar('0' + i / 10);
+				_putchar('0' + i % 10);
+				_putchar('0' + i % 10);
 			}
 			else
 			{
@@ -40,7 +40,7 @@ void print_to_98(int n)
 			{
 				putchar('0' + i / 10);
 				putchar('0' + i % 10);
-				putchar(',);
+				putchar(',');
 				putchar(' ');
 			}
 			else
