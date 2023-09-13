@@ -62,7 +62,7 @@ void print_to_98(int n)
 /**
  * print_100 - a function uses putchar to print
  * digits 100 and above
- * @n: int argurement
+ * @i: int argurement
  * Return: Always returns void
  */
 
@@ -79,23 +79,23 @@ void print_100(int i)
 /**
  * print_10 - a function uses putchar to print
  * digits 10 and above
- * @n: int argurement
+ * @i: int argurement
  * Return: Always returns void
  */
 
 void print_10(int i)
 {
-	_putchar('0' + -i / 10);
-	_putchar('0' + -i % 10);
+	_putchar('0' + i / 10);
+	_putchar('0' + i % 10);
 	_putchar(',');
-	_putchar(' ');	
+	_putchar(' ');
 }
 
 
 /**
  * print_0 - a function uses putchar to print
  * digits 0 and above
- * @n: int argurement
+ * @i: int argurement
  * Return: Always returns void
  */
 
@@ -103,21 +103,20 @@ void print_0(int i)
 {
 	_putchar('0' + i);
 	_putchar(',');
-	_putchar(' ');	
+	_putchar(' ');
 }
 
 
 /**
  * print_98 - a function uses putchar to print
  * digits 98
- * @n: int argurement
+ * @i: int argurement
  * Return: Always returns void
  */
 
 void print_98(int i)
 {
-	_putchar('0' + i / 10);				
-	_putchar('0' + i % 10);				
-	_putchar('\n');	
+	_putchar('0' + i / 10);
+	_putchar('0' + i % 10);
+	_putchar('\n');
 }
-
