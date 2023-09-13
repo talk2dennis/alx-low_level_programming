@@ -24,7 +24,7 @@ void print_to_98(int n)
 				print_98(i);
 			}
 			else if (i > 9)
-				pint_10(i);
+				print_10(i);
 			else if (i < -99)
 			{
 				_putchar('-');
