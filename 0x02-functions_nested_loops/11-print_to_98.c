@@ -2,7 +2,7 @@
 
 /**
  * print_to_98 - a function that prints from any number to 98
- * @n: int argurement
+ * @i: int argurement
  * Return: Always returns void
  */
 
