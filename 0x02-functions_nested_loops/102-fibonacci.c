@@ -46,9 +46,12 @@ int finabocci(int n)
 	{
 		j = n;
 		return (2);
+	}
 	else
+	{
 		fina = (j + i);
 		i = j;
 		j = n;
-		return (fina);	
+		return (fina);
+	}
 }
