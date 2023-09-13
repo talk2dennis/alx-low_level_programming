@@ -22,9 +22,9 @@ void print_to_98(int n)
 			}
 			else
 			{
-				putchar('0' + i);
+				_putchar('0' + i);
 				_putchar(',');
-				putchar(' ');
+				_putchar(' ');
 			}
 		}
 	}
@@ -38,18 +38,18 @@ void print_to_98(int n)
 			}
 			else if (i < 100)
 			{
-				putchar('0' + i / 10);
-				putchar('0' + i % 10);
-				putchar(',');
-				putchar(' ');
+				_putchar('0' + i / 10);
+				_putchar('0' + i % 10);
+				_putchar(',');
+				_putchar(' ');
 			}
 			else
 			{
-				putchar('0' + i / 100);
-				putchar('0' + (i % 100) / 10);
-				putchar('0' + (i % 100) % 10);
-				putchar(',');
-				putchar(' ');
+				_putchar('0' + i / 100);
+				_putchar('0' + (i % 100) / 10);
+				_putchar('0' + (i % 100) % 10);
+				_putchar(',');
+				_putchar(' ');
 			}
 		}
 	}
