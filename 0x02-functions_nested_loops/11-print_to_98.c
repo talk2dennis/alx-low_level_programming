@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * times_table - a function that prints times table
- *
+ * print_to_98 - a function that prints from any number to 98
+ * @n: int argurement
  * Return: Always returns void
  */
 
