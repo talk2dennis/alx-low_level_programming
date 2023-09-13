@@ -39,14 +39,15 @@ void print_to_98(int n)
 		        else if (i < -9)
 			{
 				_putchar('-');
-				_putchar('0' + -i);
+				_putchar('0' + -i / 10);
+				_putchar('0' + -i % 10);
 				_putchar(',');
 				_putchar(' ');
 			}
 			else if (i < 0)
 			{
 				_putchar('-');
-				_putchar('0' + i);
+				_putchar('0' + -i);
 				_putchar(',');
 				_putchar(' ');
 			}
