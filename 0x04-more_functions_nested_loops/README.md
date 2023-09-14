@@ -4,6 +4,9 @@
 
 
 
+6. The shortest distance between two points is a straight line
+> A function that draws a straight line in the terminal.
+
 7. I feel like I am diagonally parked in a parallel universe
 > function that draws a diagonal line on the terminal.
 > Where n is the number of times the character \ should be printed
