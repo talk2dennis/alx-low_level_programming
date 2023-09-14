@@ -18,7 +18,7 @@ int main(void)
 	{
 		fina = finabocci(i);
 		printf("%d", fina);
-		if (i == 5)
+		if (i == 50)
 			printf("\n");
 		else
 			printf(", ");
@@ -36,11 +36,22 @@ int main(void)
 
 int finabocci(int n)
 {
-	if (n == 1)
+	int i, j, fina;
+	if (n <= 1)
+	{
+		i = 1;
 		return (1);
+	}
 	else if (n == 2)
+	{
+		j = n;
 		return (2);
+	}
 	else
-		return (n + (n - 1));
-
+	{
+		fina = (j + i);
+		i = j;
+		j = n;
+		return (fina);
+	}
 }
