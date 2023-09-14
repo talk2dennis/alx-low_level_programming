@@ -2,6 +2,7 @@
 #define MAIN_H
 #include <stdio.h>
 
+void print_number(int n);
 void print_numbers(void);
 int mul(int a, int b);
 int _isdigit(int c);
