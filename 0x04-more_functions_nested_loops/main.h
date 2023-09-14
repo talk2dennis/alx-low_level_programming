@@ -2,6 +2,8 @@
 #define MAIN_H
 #include <stdio.h>
 
+
+int _isdigit(int c);
 int _isupper(int c);
 void print_most_numbers(void);
 void more_numbers(void);
