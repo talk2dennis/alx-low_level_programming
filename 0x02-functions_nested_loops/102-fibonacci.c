@@ -19,7 +19,7 @@ int main(void)
 
 	printf("%ld, %ld\n", a, b);
 
-	for (int i = 3; i <= n; i++)
+	for (i = 3; i <= n; i++)
 	{
 		next = a + b;
 		printf("%ld", next);
