@@ -27,7 +27,7 @@ void print_number(int n)
 	}
 	else
 	{
-		_putchar('0' + (i % 10)); 
+		_putchar('0' + (i % 10));
 	}
 }
 
