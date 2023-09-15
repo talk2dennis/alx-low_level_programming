@@ -1,22 +1,40 @@
 #include <stdio.h>
+#include <math.h>
 
-int main() {
-    long long n = 612852475143;
-    while (n % 2 == 0) {
-        printf("2 ");
-        n = n / 2;
-    }
 
-    for (long long i = 3; i * i <= n; i = i + 2) {
-        while (n % i == 0) {
-            printf("%lld ", i);
-            n = n / i;
-        }
-    }
+/**
+ * main - The entrance to our function
+ * Description: calculates the max factor of number i
+ * Return: Always (0)
+ */
 
-    if (n > 2) {
-        printf("%lld ", n);
-    }
+int main(void)
+{
+	long int i, j, max;
 
-    return 0;
+	max = -1;
+	i = 612852475143;
+
+	while (i % 2 == 0)
+	{
+		max = 2;
+		i /= 2;
+	}
+
+	for (j = 3; j < sqrt(i); j = j + 2)
+	{
+		if (i % j == 0)
+		{
+			max = j;
+			i = i / j;
+		}
+	}
+
+	if (i > 2)
+	{
+		max = i;
+		printf("%ld\n", max);
+	}
+
+	return (0);
 }
