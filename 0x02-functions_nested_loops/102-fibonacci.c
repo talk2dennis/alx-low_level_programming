@@ -8,52 +8,32 @@
  *
  */
 
-int finabocci(int n);
-
 int main(void)
 {
-	int i, fina;
+	int n, i;
+	long a, b, next;
 
-	for (i = 1; i <= 50; i++)
+	n = 50;
+	a = 1;
+	b = 2;
+
+	printf("%ld, %ld\n", a, b);
+
+	for (int i = 3; i <= n; i++)
 	{
-		fina = finabocci(i);
-		printf("%d", fina);
-		if (i == 50)
-			printf("\n");
-		else
+		next = a + b;
+		printf("%ld", next);
+
+		if (i != n)
+		{
 			printf(", ");
+		}
+
+		a = b;
+		b = next;
 	}
+
+	printf("\n");
 
 	return (0);
-}
-
-
-/**
- * finabocci - a function that prints finabocci
- * Description: prints finabocci
- * @n: int agurement
- * Return: Returns int
- *
- */
-
-int finabocci(int n)
-{
-	int i, j, fina;
-	if (n <= 1)
-	{
-		i = 1;
-		return (1);
-	}
-	else if (n == 2)
-	{
-		j = n;
-		return (2);
-	}
-	else
-	{
-		fina = (j + i);
-		i = j;
-		j = n;
-		return (fina);
-	}
 }
