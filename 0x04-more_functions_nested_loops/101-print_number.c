@@ -13,36 +13,22 @@ void print10(int n);
 
 void print_number(int n)
 {
-	if (n > 999)
-	{
-		print1000(n);
-	}
-	else if (n > 99)
-		print100(n);
-	else if (n > 9)
-		print10(n);
-	else
-		_putchar('0' + n);
-	if (n < -999)
-	{
-		_putchar('-');
-		print1000(-n);
-	}
-	else if (n < -99)
-	{
-		_putchar('-');
-		print100(-n);
-	}
-	else if (n < -9)
-	{
-		_putchar('-');
-		print10(-n);
-	}
-	else if (n < 0)
-	{
-		_putchar('-');
-		_putchar('0' + -n);
-	}
+	if (n < 0)
+    {
+        putchar('-');
+        n = -n;
+    }
+
+    if (n > 999)
+    {
+        print1000(n);
+    }
+    else if (n > 99)
+        print100(n);
+    else if (n > 9)
+        print10(n);
+    else
+        putchar('0' + n);
 }
 
 /**
