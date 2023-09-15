@@ -1,27 +1,30 @@
 #include <stdio.h>
-#include <math.h>
 
-int main() {
-    long long n = 612852475143;
-    long long max = -1;
+int isPrime(long long num) {
+    if (num < 2) return 0; // Not a prime number
+    if (num == 2) return 1; // 2 is prime
+    if (num % 2 == 0) return 0; // Even numbers (except 2) are not prime
 
-    while (n % 2 == 0) {
-        max = 2;
-        n /= 2;
+    for (long long i = 3; i * i <= num; i += 2) {
+        if (num % i == 0) return 0; // Found a divisor, not prime
     }
 
-    for (long long i = 3; i <= sqrt(n); i = i + 2) {
-        while (n % i == 0) {
-            max = i;
-            n = n / i;
+    return 1; // It's a prime number
+}
+
+int main() {
+    long long num = 612852475143;
+    long long largestPrimeFactor = 2; // Initialize with the smallest prime factor
+
+    while (num > 1) {
+        if (num % largestPrimeFactor == 0 && isPrime(largestPrimeFactor)) {
+            num /= largestPrimeFactor;
+        } else {
+            largestPrimeFactor++;
         }
     }
 
-    if (n > 2) {
-        max = n;
-    }
-
-    printf("%lld\n", max);
+    printf("%lld\n", largestPrimeFactor);
 
     return 0;
 }
