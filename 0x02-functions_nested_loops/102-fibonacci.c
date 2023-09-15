@@ -17,7 +17,7 @@ int main(void)
 	a = 1;
 	b = 2;
 
-	printf("%ld, %ld\n", a, b);
+	printf("%ld, %ld", a, b);
 
 	for (i = 3; i <= n; i++)
 	{
