@@ -11,18 +11,18 @@
 int main(void)
 {
 	int n, i;
-	long a, b, next;
+	unsigned long a, b, next;
 
 	n = 98;
 	a = 1;
 	b = 2;
 
-	printf("%ld, %ld, ", a, b);
+	printf("%lu, %lu, ", a, b);
 
 	for (i = 3; i <= n; i++)
 	{
 		next = a + b;
-		printf("%ld", next);
+		printf("%lu", next);
 
 		if (i != n)
 		{
