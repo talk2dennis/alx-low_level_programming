@@ -19,11 +19,11 @@ int main(void)
 	b = 2;
 
 
-	for (i = 3; i <= n; i++)
+	for (i = 1; i <= n; i++)
 	{
 		if ((b < 4000000) && (b % 2 == 0))
 		{
-			sum += next;
+			sum += b;
 		}
 		next = a + b;
 
