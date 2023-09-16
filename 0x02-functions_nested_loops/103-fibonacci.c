@@ -30,7 +30,7 @@ int main(void)
 		a = b;
 		b = next;
 	}
-	printf("%d\n", sum);
+	printf("%ld\n", sum);
 
 	return (0);
 }
