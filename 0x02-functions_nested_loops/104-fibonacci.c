@@ -11,7 +11,7 @@
 int main(void)
 {
 	int n, i;
-	unsigned long a, b, next;
+	unsigned long int a, b, next;
 
 	n = 98;
 	a = 1;
