@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - A function that prints a string, in reverse, followed by a new line.
+ * print_rev - A function that prints a string, in reverse, followed by a new line.
  * @s: char s
  * Return: void
  *
@@ -14,7 +14,7 @@ void print_rev(char *s)
 	int n;
 
 	n = _strlen(s);
-	while (n >= 0)
+	while ((n - 1) >= 0)
 	{
 		_putchar(s[n]);
 		n--;
@@ -23,10 +23,10 @@ void print_rev(char *s)
 }
 
 /**
- *  * _strlen - a function that returns the length of a string.
- *   * @s: char pointer
- *    * Return: always return the length of sttring
- *     */
+ ** _strlen - a function that returns the length of a string.
+ ** @s: char pointer
+ ** Return: always return the length of sttring
+ **/
 
 int _strlen(char *s)
 {
