@@ -14,7 +14,7 @@ void puts2(char *str)
 	int i, n;
 
 	i = 0;
-	n = _stelen(str);
+	n = _strlen(str);
 	while (i < n / 2)
 	{
 		_putchar(str[i]);
