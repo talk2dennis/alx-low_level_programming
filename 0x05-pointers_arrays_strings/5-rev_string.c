@@ -12,15 +12,20 @@ int _strlen(char *s);
 
 void rev_string(char *s)
 {
-	int n;
+	int n, i;
 
 	n = _strlen(s);
-	while (n > 0)
+	i = 0;
+	char tmp[n] = s;
+
+	while (i < n /2)
 	{
-		_putchar(s[n - 1]);
-		n--;
+		tmp = s[i];
+		s[i] = s[n - i - 1];
+		s[n - i - 1] = tmp;
+		i++;
+		i++;
 	}
-	_putchar('\n');
 }
 
 /**
