@@ -13,6 +13,7 @@ int _strlen(char *s);
 void rev_string(char *s)
 {
 	int n, i;
+	char tmp;
 
 	n = _strlen(s);
 	i = 0;
