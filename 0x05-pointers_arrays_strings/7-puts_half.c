@@ -1,7 +1,9 @@
 #include "main.h"
 
 /**
- * rev_string - A function that reverse a string
+ * puts_half - A function that prints
+ * the secod half of a string, in reverse,
+ * followed by a new line.
  * @s: char s
  * Return: void
  *
@@ -9,21 +11,17 @@
 
 int _strlen(char *s);
 
-void rev_string(char *s)
+void puts_half(char *str)
 {
-	int n, i;
-	char tmp;
+	int n, i, j;
 
-	n = _strlen(s);
-	i = 0;
-
-	while (i < n / 2)
+	n = _strlen(str);
+	j = (n - 1)  / 2;
+	for (i = j + 1; str[i] != '\0'; i++)
 	{
-		tmp = s[i];
-		s[i] = s[n - i - 1];
-		s[n - i - 1] = tmp;
-		i++;
+		_putchar(str[i]);
 	}
+	_putchar('\n');
 }
 
 /**
