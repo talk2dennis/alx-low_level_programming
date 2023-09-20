@@ -15,13 +15,14 @@ char *leet(char *a)
 	{
 		for (j = 0; j < 5; j++)
 		{
-			if ("AEOTL"[i] == a[i] || "aeotl" == a[i])
+			if ("AEOTL"[j] == a[i] || "aeotl"[j] == a[i])
 			{
-				a[i] = "43071"[i];
+				a[i] = "43071"[j];
 				break;
 			}
 		}
 
 		i++;
 	}
+	return (a);
 }
