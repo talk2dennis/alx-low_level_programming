@@ -57,7 +57,7 @@ int isSpace(char c)
 	sep[12] = ',';
 	sep[13] = ';';
 
-	for (i = 0; i < 10; i++)
+	for (i = 0; i < 14; i++)
 	{
 		if (c == sep[i])
 			return (1);
