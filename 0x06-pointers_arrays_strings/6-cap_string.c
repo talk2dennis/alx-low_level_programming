@@ -6,7 +6,7 @@
  * Return: a pointer
  */
 
-int isSpace(char *c);
+int isSpace(char c);
 
 char *cap_string(char *c)
 {
@@ -47,7 +47,7 @@ char *cap_string(char *c)
  */
 
 
-int isSpace(char *c)
+int isSpace(char c)
 {
 	int i;
 	char sep[] = {' ', '\t', '\n', '\r', '\f', '\v', '.', '{', '}'};
