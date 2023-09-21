@@ -50,7 +50,7 @@ char *cap_string(char *c)
 int isSpace(char c)
 {
 	int i;
-	char sep[13] = {' ', '\t', '\n', '\r', '\f', '\v', '.', '!', '?', '}'};
+	char sep[13] = {' ', '\t', '\n', ')', ';', '(', '.', '!', '?', '}'};
 
 	sep[10] = '{';
 	sep[11] = '"';
