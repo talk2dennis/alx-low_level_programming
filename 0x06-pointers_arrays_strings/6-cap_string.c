@@ -14,6 +14,8 @@ char *cap_string(char *c)
 
 	for (i = 0; c[i] != '\0'; i++)
 	{
+		if (c[0] >= 'a' && c[0] <= 'z')
+			c[0] -= 32;
 		if (isSpace(c[i]))
 		{
 			if (c[i + 1] >= 'a' && c[i + 1] <= 'z')
