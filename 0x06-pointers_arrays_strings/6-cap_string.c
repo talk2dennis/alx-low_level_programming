@@ -10,31 +10,14 @@ int isSpace(char c);
 
 char *cap_string(char *c)
 {
-	int i, cap = 1;
+	int i;
 
 	for (i = 0; c[i] != '\0'; i++)
 	{
 		if (isSpace(c[i]))
 		{
-			cap = 1;
-		}
-		else
-		{
-			if (cap)
-			{
-				if (c[i] >= 'a' && c[i] <= 'z')
-				{
-					c[i] -= 32;
-				}
-				cap = 0;
-			}
-			else
-			{
-				if (c[i] >= 'A' && c[i] <= 'Z')
-				{
-					c[i] += 32;
-				}
-			}
+			if (c[i + 1] >= 'a' && c[i + 1] <= 'z')
+				c[i + 1] -= 32;
 		}
 	}
 	return (c);
