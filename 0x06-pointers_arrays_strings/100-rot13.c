@@ -8,13 +8,18 @@
 
 char *rot13(char *str)
 {
-	int i, rot = 13;
+	int i, j;
+	char map[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char rot13[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 	i = 0;
 	while (str[i] != 0)
 	{
-		if (str[i] >= 'a' && str[i] <= 'z')
-			str[i] = ((str[i] - 'a' + rot) % 26) + 'a';
+		for (j = 0; map[j] != '\0'; j++)
+		{
+			if (str[i] == map[j])
+				str[i] = rot13[j];
+		}
 		i++;
 	}
 	return (str);
