@@ -17,7 +17,20 @@
 > Returns a pointer to the first occurrence of the character c
 > in the string s, or NULL if the character is not found
 
+3. strspn
+> function that gets the length of a prefix substring.
+> Prototype: unsigned int _strspn(char *s, char *accept);
+> Returns the number of bytes in the initial segment of s which consist only of bytes from accept
 
+4. strpbrk
+> function that searches a string for any of a set of bytes.
+> Prototype: char *_strpbrk(char *s, char *accept);
 
+5. strstr
+> function that locates a substring.
+> Prototype: char *_strstr(char *haystack, char *needle);
 
+6. Chess is mental torture
+>  function that prints the chessboard.
+> Prototype: void print_chessboard(char (*a)[8]);
 
