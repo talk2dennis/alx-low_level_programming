@@ -4,8 +4,11 @@
  * is_prime_number - function that returns 1 if the input
  * integer is a prime number
  * @n: int n
+ * @num: int num
  * Return: 1 if prime and 0 if otherwisw
  */
+
+find_prime(int n, int num);
 
 int is_prime_number(int n)
 {
