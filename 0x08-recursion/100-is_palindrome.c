@@ -18,7 +18,9 @@ int find_palindrome(char *start, char *end)
 int is_palindrome(char *s)
 {
 	if (*s == '\0' || *(s + 1) == '\0')
+	{
 		return (1);
+	}
 	return (find_palindrome(s, s + strlen(s) - 1));
 }
 
@@ -32,8 +34,12 @@ int is_palindrome(char *s)
 int find_palindrome(char *start, char *end)
 {
 	if (start >= end)
+	{
 		return (1);
+	}
 	if (*start != *end)
+	{
 		return (0);
+	}
 	return (find_palindrome(start + 1, end - 1));
 }
