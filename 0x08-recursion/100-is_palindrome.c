@@ -7,7 +7,7 @@
  * Return: int
  */
 
-int find_palindrome(char *start, char *end)
+int find_palindrome(char *start, char *end);
 
 /**
  * is_palindrome - A function that returns 1 if a string is a palindrome
