@@ -8,7 +8,7 @@
  * Return: 1 if prime and 0 if otherwisw
  */
 
-find_prime(int n, int num);
+int find_prime(int n, int num);
 
 int is_prime_number(int n)
 {
@@ -24,7 +24,7 @@ int is_prime_number(int n)
  * Return: int
  */
 
-find_prime(int n, int num)
+int find_prime(int n, int num)
 {
 	if (num >= n)
 		return (1);
