@@ -6,6 +6,8 @@
  * Return: returns int
  */
 
+int find_sqrt(int n, int num);
+
 int _sqrt_recursion(int n)
 {
 	if (n < 0)
@@ -14,6 +16,13 @@ int _sqrt_recursion(int n)
 		return (n);
 	return (find_sqrt(n, 1));
 }
+
+/**
+ * find_sqrt - a helper function
+ * @n: integer n
+ * @num: integer num
+ * Return: returns int
+ */
 
 int find_sqrt(int n, int num)
 {
