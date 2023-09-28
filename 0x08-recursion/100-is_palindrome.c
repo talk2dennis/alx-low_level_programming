@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 /**
  * find_palindrome - A helper function to find palindrome
