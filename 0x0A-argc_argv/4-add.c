@@ -10,24 +10,29 @@
 
 int main(int argc, char *argv[])
 {
-	int num, sum, i;
+	int sum = 0, i, j;
 
-	if (argc < 1)
+	if (argc < 2)
 	{
 		printf("0\n");
 		return (0);
 	}
 	for (i = 1; i < argc; i++)
 	{
-		char *endptr;
+		char *endptr = argv[i];
 
-		num = strtol(argv[i], endptr, 10);
-		if (endptr != '\0' && num < 0)
+		j = 0;
+		while (*(endptr + j))
 		{
-			printf("Error\n");
-			return (1);
+			if (*(endptr + j) < 48 || *(endptr + j) > 57)
+			{
+				printf("Error\n");
+				return (1);
+			}
+			j++;
 		}
-		sum += num;
+
+		sum += atoi(endptr);
 	}
 	printf("%d\n", sum);
 	return (0);
