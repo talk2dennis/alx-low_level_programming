@@ -36,10 +36,13 @@ char *str_helper(char *str, int n)
 char *str_concat(char *s1, char *s2)
 {
 	char *ptr;
-	int n;
+	int n = 0;
 
 	if (s1 == NULL && s2 == NULL)
-		return (NULL);
+	{
+		ptr = str_helper("", 0);
+		return (ptr);
+	}
 	if (s1 == NULL && s2 != NULL)
 	{
 		n = strlen(s2);
