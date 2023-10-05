@@ -30,8 +30,7 @@ char *argstostr(int ac, char **av)
 			*ptr = av[i][j];
 			ptr++;
 		}
-		if (av[i][j] == '\0')
-			*ptr = av[i][j];
+		*ptr = av[i][j];
 	}
 	*ptr = '\0';
 	return (ptr - n);
