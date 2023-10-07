@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * len - returns the length of a string
+ * lent - returns the length of a string
  * @str: string
  * Return: returns the legnth of str
  */
@@ -10,7 +10,7 @@
 unsigned int lent(char *str)
 {
 	if (*str == '\0')
-		return 0;
+		return (0);
 	return (1 + lent(str + 1));
 }
 
@@ -19,7 +19,7 @@ unsigned int lent(char *str)
  * string_nconcat - a function that concatenates two strings
  * @s1: string s1 to copy to
  * @s2: strings to copy from
- * n: integer n
+ * @n: integer n
  * Return: a pointer
  */
 
