@@ -27,8 +27,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (ptr == NULL)
 		return (NULL);
 
-	strcpy(ptr, s1);
-	for (i = n1, j = 0; j < len; i++, j++)
+	while (s1[i] != '\0')
+	{
+		ptr[i] = s1[i];
+		i++;
+	}
+	for (j = 0; j < len; i++, j++)
 		ptr[i] = s2[j];
 	ptr[i] = '\0';
 	return (ptr);
