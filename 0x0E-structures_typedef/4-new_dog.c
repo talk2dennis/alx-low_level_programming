@@ -8,7 +8,7 @@
  * Return: returns he lenght in int
  */
 
-int _strlen(char *s)
+unsigned int _strlen(char *s)
 {
 	if (*s == '\0')
 		return (0);
@@ -56,7 +56,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(mydog);
 		return (NULL);
 	}
-	_strcpy(mydog->name, name);
+	_strcpy(name, mydog->name);
 	mydog->owner = malloc(_strlen(owner));
 	if (mydog->owner == NULL)
 	{
@@ -64,7 +64,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(mydog);
 		return (NULL);
 	}
-	_strcpy(mydog->owner, owner);
+	_strcpy(owner, mydog->owner);
 	mydog->age = age;
 	return (mydog);
 }
