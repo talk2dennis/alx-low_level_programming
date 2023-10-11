@@ -24,13 +24,13 @@ unsigned int _strlen(char *s)
 
 void _strcpy(char *src, char *dest)
 {
-	while (*src != '\0')
+	int i;
+
+	for (i = 0; src[i] != '\0'; i++)
 	{
-		*dest = *src;
-		dest++;
-		src++;
+		dest[i] = src[i];
 	}
-	*dest = '\0';
+	dest[i] = '\0';
 }
 
 
