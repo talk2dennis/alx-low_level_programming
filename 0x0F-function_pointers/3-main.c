@@ -10,11 +10,11 @@
 int main(int argc, char *argv[])
 {
 	int a, b;
-	char op;
+	char *op;
 
 	if (argc != 4)
 	{
-		printf("Error");
+		printf("Error: invalid argurement\n");
 		exit(1);
 	}
 	a = atoi(argv[1]);
@@ -23,12 +23,12 @@ int main(int argc, char *argv[])
 
 	if (*(argv[2] + 1) != '\0' || get_op_func(op) == NULL)
 	{
-		printf("Error");
+		printf("Error: invalid operator\n");
 		exit(2);
 	}
 	if (*op == '/' && b == 0)
 	{
-		printf("Error: can't divide by zero");
+		printf("Error: can't divide by zero\n");
 		exit(3);
 	}
 	printf("%d\n", get_op_func(op)(a, b));
