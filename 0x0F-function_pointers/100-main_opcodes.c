@@ -28,8 +28,9 @@ int main(int argc, char *argv[])
 
 	for (i = 0; i < byte; i++)
 	{
+		if (i == byte - 1)
+			printf("%02x\n", opcode[i]);
 		printf("%02x ", opcode[i]);
 	}
-	putchar('\n');
 	return (0);
 }
