@@ -29,7 +29,10 @@ int main(int argc, char *argv[])
 	for (i = 0; i < byte; i++)
 	{
 		if (i == byte - 1)
+		{
 			printf("%02hhx\n", opcode[i]);
+			break;
+		}
 		printf("%02hhx ", opcode[i]);
 	}
 	return (0);
