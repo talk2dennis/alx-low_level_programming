@@ -12,6 +12,7 @@ int main(int argc, char *argv[])
 {
 	int i,  byte;
 	unsigned char *opcode;
+
 	if (argc != 2)
 	{
 		printf("Error\n");
