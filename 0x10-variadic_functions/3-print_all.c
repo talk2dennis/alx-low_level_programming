@@ -19,7 +19,7 @@ void print_all(const char * const format, ...)
 		{
 			case 'c':
 			printf("%c", va_arg(arg, int));
-			break;	
+			break;
 			case 'i':
 			printf("%i", va_arg(arg, int));
 			break;
@@ -30,7 +30,8 @@ void print_all(const char * const format, ...)
 			printf("%s", va_arg(arg, char *));
 			break;
 			default:
-			break;
+			i++;
+			continue;
 		}
 		if (format[i + 1] == '\0')
 			putchar('\n');
@@ -39,9 +40,4 @@ void print_all(const char * const format, ...)
 		i++;
 	}
 	va_end(arg);
-}
-int main(void)
-{
-    print_all("ceis", 'B', 3, "stSchool");
-    return (0);
 }
