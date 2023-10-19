@@ -1,8 +1,8 @@
 #include "lists.h"
 /**
- * print_list - A function to print out all the elements of a list
- * @h: list to print out the elements
- * Return: the size of the list
+ * free_list - A function to print out all the elements of a list
+ * @head: list to print out the elements
+ * Return: nothing
  */
 
 void free_list(list_t *head)
