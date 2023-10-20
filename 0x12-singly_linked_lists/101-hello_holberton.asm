@@ -1,3 +1,7 @@
+section .data
+msg db 'Hello, Coding', 0xa     ;message to print
+len equ $ - helloMsg
+
 section .text
 	global main
 
@@ -11,6 +15,3 @@ main:
 	mov	eax, 1 		;system call (sys_exit)
 	int	0x80		;call kernel
 
-section .data
-msg db 'Hello, Coding', 0xa	;message to print
-len equ $ - helloMsg
