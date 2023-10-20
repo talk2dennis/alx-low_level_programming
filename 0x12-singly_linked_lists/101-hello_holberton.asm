@@ -1,5 +1,5 @@
 section .data
-msg db 'Hello, Coding', 0xa     ;message to print
+helloMsg db 'Hello, Coding', 0xa     ;message to print
 len equ $ - helloMsg
 
 section .text
