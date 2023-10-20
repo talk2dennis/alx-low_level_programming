@@ -1,19 +1,18 @@
 section .data
-    helloMsg db 'Hello, Holberton',10
-    msgLen equ $ - helloMsg
+    helloMsg db "Hello, Holberton",10, 0
+    format: db "%s", 0 
 
 section .text
-    global main 
+    global main
+    extern printf 
 
     main:
     ; Write the message to stdout
-    mov eax, 4         ; syscall number for sys_write
-    mov ebx, 1         ; file descriptor 1 is stdout
-    mov ecx, helloMsg  ; pointer to the message
-    int 0x80           ; call kernel
-
-    ; Exit the program
-    mov eax, 1         ; syscall number for sys_exit
-    xor ebx, ebx       ; exit code 0
-    int 0x80           ; call kernel
-
+    push rbp
+    mov rdi, format 
+    mov rsi, helloMsg
+    mov rax, 0
+    call printf
+    pop rbp
+    mov rax, 0
+    ret
