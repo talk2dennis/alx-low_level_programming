@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * free_listint - A function that frees listint of memory allocated
+ * free_listint2 - A function that frees listint of memory allocated
  * @head: the linked list
  * Return: nothing
  */
