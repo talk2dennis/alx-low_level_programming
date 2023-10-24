@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * pot_listint - a function that detates the head of a node
+ * pop_listint - a function that detates the head of a node
  * @head: the list
  * Return: the node data
  */
