@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * linstint_len - function that returns the length of a linked list
+ * listint_len - function that returns the length of a linked list
  * @h: the linked list to return the length
  * Return: the length of the list in int
  */
