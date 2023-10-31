@@ -45,13 +45,13 @@ int main(int argc, char *argv[])
 	}
 	src = open(argv[1], O_RDONLY);
 	dest = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
-	check_error(src, dest, argv[]);
+	check_error(src, dest, argv);
 	while (fr == 1024)
 	{
 		fr = read(src, buffer, sizeof(buffer));
-		check_error(fr, 0, argv[]);
+		check_error(fr, 0, argv);
 		fw = write(dest, buffer, fr);
-		check_error(0, fw, argv[]);
+		check_error(0, fw, argv);
 	}
 	fc = close(src);
 	if (fc == -1)
