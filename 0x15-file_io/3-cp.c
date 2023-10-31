@@ -50,7 +50,7 @@ int main(int argc, char *argv[])
 	}
 	src = open(argv[1], O_RDONLY);
 	check_error(src, src, argv[1], 'r');
-	dest = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
+	dest = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
 	check_error(dest, dest, argv[2], 'w');
 	while (fr == 1024)
 	{
