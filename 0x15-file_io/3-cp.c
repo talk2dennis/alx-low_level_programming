@@ -9,22 +9,17 @@
  * Return: void
  */
 
-void check_error(int err, int fd, char *name, char code)
+void check_error(int src, int dest, char *argv[])
 {
-	if (err == -1 && code == 'r')
+	if (src == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read to %s\n", name);
-		exit(99);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+		exit(98);
 	}
-	else if (err == -1 && code == 'w')
+	if (dest  == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", name);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
-	}
-	else if (err == -1 && code == 'c')
-	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
-		exit(100);
 	}
 }
 
@@ -49,19 +44,26 @@ int main(int argc, char *argv[])
 		exit(97);
 	}
 	src = open(argv[1], O_RDONLY);
-	check_error(src, src, argv[1], 'r');
 	dest = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
-	check_error(dest, dest, argv[2], 'w');
+	check_error(src, dest, argv[]);
 	while (fr == 1024)
 	{
 		fr = read(src, buffer, sizeof(buffer));
-		check_error(fr, src, argv[1], 'r');
+		check_error(fr, 0, argv[]);
 		fw = write(dest, buffer, fr);
-		check_error(fw, dest, argv[2], 'w');
+		check_error(0, fw, argv[]);
 	}
 	fc = close(src);
-	check_error(fc, src, argv[1], 'c');
+	if (fc == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", src);
+		exit(100);
+	}
 	fc = close(dest);
-	check_error(fc, dest, argv[2], 'c');
+	if (fc == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", dest);
+		exit(100);
+	}
 	return (0);
 }
