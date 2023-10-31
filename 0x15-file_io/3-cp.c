@@ -2,10 +2,9 @@
 
 /**
  * check_error - function that checks whether a file was opened without error
- * @err: error code
- * @fd: file descriptor
- * @name: file name
- * @code: the mode of the file
+ * @src: src file descriptor
+ * @dest: destination file descriptor
+ * @argv: pointer to the argurement array
  * Return: void
  */
 
