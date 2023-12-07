@@ -1,9 +1,10 @@
 #include "lists.h"
 
 /**
- * get_dnodeint_at_index - A function that returns a data at an index
- * @head: pointer to the list
- * @index: int index
+ * insert_dnodeint_at_index - A function that inserts node at index
+ * @h: pointer to the list
+ * @idx: int index
+ * @n: int data to add
  * Return: pointer to the data
  */
 
