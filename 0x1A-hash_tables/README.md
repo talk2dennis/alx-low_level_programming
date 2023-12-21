@@ -39,19 +39,19 @@ typedef struct hash_table_s
 
 ```
 
-0. >>> ht = {}
+0. *ht = {}*
 - Write a function that creates a hash table.
 - Prototype: ```hash_table_t *hash_table_create(unsigned long int size);```
 - where size is the size of the array
 - Returns a pointer to the newly created hash table
 - If something went wrong, your function should return NULL
 
-1. djb2
+1. *djb2*
 - Write a hash function implementing the djb2 algorithm.
 - Prototype: unsigned long int hash_djb2(const unsigned char *str);
 - You are allowed to copy and paste the function from this page
 
-2. key -> index
+2. *key -> index*
 Write a function that gives you the index of a key.
 - Prototype: unsigned long int key_index(const unsigned char *key, unsigned long int size);
 - where key is the key
@@ -60,7 +60,7 @@ Write a function that gives you the index of a key.
 - Returns the index at which the key/value pair should be stored in the array of the hash table
 - You will have to use this hash function for all the next tasks
 
-3. >>> ht['betty'] = 'cool'
+3. *ht['betty'] = 'cool'*
 Write a function that adds an element to the hash table.
 - Prototype: int hash_table_set(hash_table_t *ht, const char *key, const char *value);
 - Where ht is the hash table you want to add or update the key/value to
@@ -69,14 +69,14 @@ Write a function that adds an element to the hash table.
 - Returns: 1 if it succeeded, 0 otherwise
 - In case of collision, add the new node at the beginning of the list
 
-4. >>> ht['betty']
+4. *ht['betty']*
 Write a function that retrieves a value associated with a key.
 - Prototype: char *hash_table_get(const hash_table_t *ht, const char *key);
 - where ht is the hash table you want to look into
 - and key is the key you are looking for
 - Returns the value associated with the element, or NULL if key couldn’t be found
 
-5. >>> print(ht)
+5. *print(ht)*
 - Write a function that prints a hash table.
 - Prototype: void hash_table_print(const hash_table_t *ht);
 - where ht is the hash table
@@ -85,7 +85,7 @@ Write a function that retrieves a value associated with a key.
 - Format: see example
 - If ht is NULL, don’t print anything
 
-6. >>> del ht
+6. *del ht*
 - Write a function that deletes a hash table.
 - Prototype: void hash_table_delete(hash_table_t *ht);
 - where ht is the hash table
