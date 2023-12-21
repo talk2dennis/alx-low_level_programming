@@ -65,3 +65,6 @@
 
 ### 0x17. C - Doubly linked lists
 - 👉 Implemented various operations (deletion, insertion, etc.) with doubly linked lists.
+
+### 0x1A. C - Hash tables
+- 🧱 A robust project making use of all what we have learnt on c, structs, memory allocations etc
