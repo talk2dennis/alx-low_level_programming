@@ -2,7 +2,7 @@
 
 /*
  * key_index - A function that uses hash function to return index for our table
- * @key: a pointer to strings
+ * @key_index: a pointer to strings
  * @size: the size of the table
  * Return: the index
  */
