@@ -1,13 +1,17 @@
 #include "hash_tables.h"
 
-/*
- * key_index - A function that uses hash function to return index for our table
- * @key_index: a pointer to strings
- * @size: the size of the table
- * Return: the index
+/**
+ * key_index - A function thats takes a key string and
+ *             returns an index int which determines the where data is stored
+ * @key: the index
+ * @size: int size
+ *
+ * Return: The index of the key
+ *
  */
 
 unsigned long int key_index(const unsigned char *key, unsigned long int size)
+
 {
 	if (!key || size <= 0)
 		return (0);
