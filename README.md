@@ -68,3 +68,18 @@
 
 ### 0x1A. C - Hash tables
 - 🧱 A robust project making use of all what we have learnt on c, structs, memory allocations etc
+
+### 0x1C-makefiles
+> The projects in these directory will use the following concepts:
+- What are make, Makefiles
+- When, why and how to use Makefiles
+- What are rules and how to set and use them
+- What are explicit and implicit rules
+- What are the most common / useful rules
+- What are variables and how to set and use them
+
+
+
+
+
+
