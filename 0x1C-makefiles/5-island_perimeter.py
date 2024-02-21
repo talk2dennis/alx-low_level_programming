@@ -20,6 +20,8 @@ def island_perimeter(grid):
         for col in range(len(grid[0])):
             if grid[row][col] == 1:
                 size += 1
-                if grid[row - 1][col] == 1 or grid[row][col - 1] == 1:
+                if row > 0 and grid[row - 1][col] == 1:
+                    side += 1
+                if col > 0 and grid[row][col - 1] == 1:
                     side += 1
     return (size * 4) - (side * 2)
