@@ -11,13 +11,14 @@
 
 void print_arr(int *array, size_t size, size_t low)
 {
-	while (low < size)
+	while (low <= size)
 	{
-		printf("%lu");
+		printf("%d", array[low]);
 		if (low == size)
-			putchar("\n");
+			putchar('\n');
 		else
-			putchar(",");
+			printf(", ");
+		low++;
 	}
 }
 
@@ -40,6 +41,7 @@ int binary_search(int *array, size_t size, int value)
 
 	while (low <= high)
 	{
+		printf("Searching in array: ");
 		print_arr(array, high, low);
 		mid = low + (high - low) / 2;
 		if (array[mid] == value)
