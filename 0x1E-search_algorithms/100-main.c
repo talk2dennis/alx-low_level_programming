@@ -12,8 +12,10 @@ int main(void)
     };
     size_t size = sizeof(array) / sizeof(array[0]);
 
-    printf("Found %d at index: %d\n\n", 6, jump_search(array, size, 6));
     printf("Found %d at index: %d\n\n", 1, jump_search(array, size, 1));
-    printf("Found %d at index: %d\n", 999, jump_search(array, size, 999));
+    printf("Found %d at index: %d\n\n", 0, jump_search(array, size, 0));
+    printf("Found %d at index: %d\n\n", 9, jump_search(array, size, 9));
+    printf("Found %d at index: %d\n\n", -1, jump_search(array, size, -1));
+    printf("Found %d at index: %d\n", 10, jump_search(array, size, 10));
     return (EXIT_SUCCESS);
 }
